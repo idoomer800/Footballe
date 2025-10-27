@@ -1,0 +1,48 @@
+{
+  "name": "Player",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Player's full name"
+    },
+    "state_of_origin": {
+      "type": "string",
+      "description": "State where the player is from"
+    },
+    "age": {
+      "type": "integer",
+      "description": "Current age"
+    },
+    "debut_year": {
+      "type": "integer",
+      "description": "Year they debuted professionally"
+    },
+    "height": {
+      "type": "integer",
+      "description": "Height in inches"
+    },
+    "weight": {
+      "type": "integer",
+      "description": "Weight in pounds"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL to player's image"
+    },
+    "player_index": {
+      "type": "integer",
+      "description": "Order in the list (1-100)"
+    }
+  },
+  "required": [
+    "name",
+    "state_of_origin",
+    "age",
+    "debut_year",
+    "height",
+    "weight",
+    "image_url",
+    "player_index"
+  ]
+}

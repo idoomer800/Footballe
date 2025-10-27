@@ -1,0 +1,16 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css');
+
+html, body, #root { height: 100%; }
+body { margin: 0; background: #0f172a; }
+
+/* minimal overrides for dark theme used in components */
+.bg-gray-900 { background-color: #0b1220; }
+.bg-gray-800 { background-color: #111827; }
+.bg-gray-700 { background-color: #1f2937; }
+.text-white { color: #fff; }
+.text-gray-400 { color: #9ca3af; }
+.text-gray-300 { color: #d1d5db; }
+.bg-green-600 { background-color: #059669; }
+.bg-yellow-500 { background-color: #F59E0B; }
+.bg-blue-600 { background-color: #2563EB; }
+.bg-blue-700 { background-color: #1D4ED8; }
