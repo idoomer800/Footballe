@@ -3,6 +3,11 @@ import { motion } from 'framer-motion';
 import { Card } from '../../src/Components/ui/card.jsx';
 import { Trophy, Calendar, Ruler, Hash, Users, Award, ListOrdered } from "lucide-react";
 
+const imageSource = (name) => {
+    const parts = name.trim().split(/\s+/).join("_");
+    return `/player_images/${parts}.jpg`
+  }
+
 export default function PlayerReveal({ player, isWin }) {
   return (
     <motion.div
@@ -14,10 +19,10 @@ export default function PlayerReveal({ player, isWin }) {
         <div className="relative">
           <div className="relative h-80 overflow-hidden">
             <img 
-              src={player.image_url} 
+              src={imageSource(player.name)} 
               alt={player.name}
               className="w-full h-full object-cover"
-              onError={e => { e.target.onerror = null; e.target.src = '/player_images/placeholder.jpg'; }}
+              onError={e => { e.target.onerror = null; e.target.src = imageSource(player.name); }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
           </div>

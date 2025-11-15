@@ -45,6 +45,11 @@ export default function GuessRow({ guess, correctPlayer, index }) {
   return 'bg-gray-700 text-gray-300';
   };
 
+const imageSource = (name) => {
+    const parts = name.trim().split(/\s+/).join("_");
+    return `/player_images/${parts}.jpg`
+  }
+
   const attributes = [
     { label: 'College', value: guess.college, correct: correctPlayer.college, type: 'college' },
     { label: 'Year of Birth', value: guess.year_of_birth, correct: correctPlayer.year_of_birth, type: 'year_of_birth' },
@@ -66,10 +71,10 @@ export default function GuessRow({ guess, correctPlayer, index }) {
       <div className="p-4 bg-gray-900 rounded-lg border border-gray-800">
         <div className="flex items-center gap-4 mb-4">
           <img 
-            src={guess.image_url} 
+            src={imageSource(guess.name)} 
             alt={guess.name}
             className="w-20 h-20 rounded-lg object-cover"
-            onError={e => { e.target.onerror = null; e.target.src = '/player_images/placeholder.jpg'; }}
+            onError={e => { e.target.onerror = null; e.target.src = imageSource(guess.name); }}
           />
           <div>
             <p className="font-bold text-white text-xl">{guess.name}</p>
