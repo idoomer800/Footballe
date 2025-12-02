@@ -49,6 +49,11 @@ export default function PlayerSearch({ players, onGuess, disabled }) {
     }
   };
 
+  const imageSource = (name) => {
+    const parts = name.trim().split(/\s+/).join("_");
+    return `/player_images/${parts}.jpg`
+  }
+
   return (
     <div className="relative max-w-md" ref={dropdownRef}>
       <div className="relative">
@@ -89,9 +94,10 @@ export default function PlayerSearch({ players, onGuess, disabled }) {
                 <div className="flex items-center gap-3">
                   {player.image_url && (
                     <img 
-                      src={player.image_url} 
-                      alt={player.Name}
-                      className="w-10 h-10 rounded-full object-cover"
+                      src={imageSource(guess.Name)} 
+                      alt={guess.Name}
+                      className="w-20 h-20 rounded-lg object-cover"
+                      onError={e => { e.target.onerror = null; e.target.src = imageSource(guess.Name); }}
                     />
                   )}
                   <div>

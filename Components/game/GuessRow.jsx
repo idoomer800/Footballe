@@ -145,11 +145,17 @@ const parseWeight = (str) => {
   return match ? parseInt(match[1], 10) : null;
 }
 
-  const getStatusColor = (status) => {
+const getStatusColor = (status) => {
   if (status === 'exact') return 'bg-green-600 text-white';
   if (status === 'close') return 'text-white';
   return 'bg-gray-700 text-gray-300';
-  };
+};
+
+const parseNumber = (num) => {
+  if (num === -1)
+    return "-"
+  return num
+}
 
 const imageSource = (name) => {
     const parts = name.trim().split(/\s+/).join("_");
@@ -158,7 +164,7 @@ const imageSource = (name) => {
 
   const attributes = [
     { label: 'Position', value: guess.Position, correct: correctPlayer.Position, type: 'Position' },
-    { label: 'Age', value: guess.age, correct: correctPlayer.age, type: 'Age' },
+    { label: 'Age', value: guess.Age, correct: correctPlayer.Age, type: 'Age' },
     { label: 'Height', value: guess.Height, correct: correctPlayer.Height, type: 'Height' },
     { label: 'Weight', value: guess.Weight, correct: correctPlayer.Weight, type: 'Weight' },
     { label: 'Active', value: guess.Active, correct: correctPlayer.Active, type: 'Active' },
@@ -168,12 +174,6 @@ const imageSource = (name) => {
     { label: 'Draft Round', value: parseNumber(guess["Draft Round"]), correct: correctPlayer["Draft Round"], type: 'Draft Round' },
     { label: 'Team', value: guess.Team, correct: correctPlayer.Team, type: 'Team' },
   ];
-
-  const parseNumber = (num) => {
-    if (num === -1)
-      return "-"
-    return num
-  }
 
   return (
     <motion.div

@@ -28,7 +28,7 @@ export default function Game() {
   const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
   const isTouchdown = diffDays + 1 > players.length;
   const dailyPlayerIndex = isTouchdown ? players.length : diffDays + 1;
-  const correctPlayer = players.find(p => p.player_index === dailyPlayerIndex);
+  const correctPlayer = players.find(p => p.id === dailyPlayerIndex);
 
   useEffect(() => {
     if (!correctPlayer) return;
@@ -59,7 +59,7 @@ export default function Game() {
 
     const newGuesses = [...guesses, player];
     setGuesses(newGuesses);
-
+    console.log(correctPlayer)
     if (player.id === correctPlayer.id) {
       setGameState('won');
       setShowConfetti(true);

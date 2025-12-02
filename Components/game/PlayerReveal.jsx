@@ -135,13 +135,16 @@ export default function PlayerReveal({ player, isWin }) {
               </div>
               <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.College}</p>
             </div>
-            <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
-              <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
+            <div className="bg-gray-800 rounded-lg p-4 flex flex-col">
+              <div className="flex items-center gap-2 text-gray-400 mb-2">
                 <Users className="w-4 h-4" />
                 <span className="text-sm">Team</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Team}</p>
-            </div>
+              <p className="text-2xl font-bold text-white whitespace-normal">
+                {player.Team}
+              </p>
+          </div>
+
           </motion.div>
         </div>
       </Card>
