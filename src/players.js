@@ -1,5 +1,6 @@
 const players = [
     {
+        "id": 1,
         "Name": "Tommy DeVito",
         "Position": "QB",
         "Age": 27,
@@ -8,11 +9,12 @@ const players = [
         "Active": "Questionable",
         "College": "Illinois",
         "Jersey": 16,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
+
         "Name": "Joshua Dobbs",
         "Position": "QB",
         "Age": 30,
@@ -60,8 +62,8 @@ const players = [
         "Active": "Active",
         "College": "Florida A&M",
         "Jersey": 26,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -99,8 +101,8 @@ const players = [
         "Active": "Active",
         "College": "Eastern Washington",
         "Jersey": 86,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -203,8 +205,8 @@ const players = [
         "Active": "Active",
         "College": "Washington",
         "Jersey": 37,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -229,8 +231,8 @@ const players = [
         "Active": "Active",
         "College": "Ole Miss",
         "Jersey": 77,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -359,8 +361,8 @@ const players = [
         "Active": "Active",
         "College": "NC State",
         "Jersey": 94,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -385,8 +387,8 @@ const players = [
         "Active": "Active",
         "College": "Arkansas",
         "Jersey": 55,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -424,8 +426,8 @@ const players = [
         "Active": "Questionable",
         "College": "Idaho",
         "Jersey": 53,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -437,8 +439,8 @@ const players = [
         "Active": "Active",
         "College": "Minnesota",
         "Jersey": 51,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -489,8 +491,8 @@ const players = [
         "Active": "Active",
         "College": "Ferris State",
         "Jersey": 45,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -502,8 +504,8 @@ const players = [
         "Active": "Active",
         "College": "Cal Poly",
         "Jersey": 91,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -515,8 +517,8 @@ const players = [
         "Active": "Active",
         "College": "Western Michigan",
         "Jersey": 14,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -593,8 +595,8 @@ const players = [
         "Active": "Active",
         "College": "SMU",
         "Jersey": 22,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -619,8 +621,8 @@ const players = [
         "Active": "Active",
         "College": "Troy",
         "Jersey": 24,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -632,8 +634,8 @@ const players = [
         "Active": "Active",
         "College": "Ole Miss",
         "Jersey": 23,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -645,8 +647,8 @@ const players = [
         "Active": "Active",
         "College": "Texas",
         "Jersey": 41,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -925,7 +927,7 @@ const players = [
     {
         "Name": "Walter Payton",
         "Position": "RB",
-        "Age": "Deceased",
+        "Age": -1,
         "Height": "5'10''",
         "Weight": "200 lbs",
         "Active": "OUT",
@@ -982,9 +984,9 @@ const players = [
         "Weight": "215 lbs",
         "Active": "Questionable",
         "College": "Wesleyan University",
-        "Jersey": "-",
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Jersey": -1,
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "North Carolina"
     },
     {
@@ -1022,8 +1024,8 @@ const players = [
         "Active": "Questionable",
         "College": "Texas Tech",
         "Jersey": 83,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -1068,7 +1070,7 @@ const players = [
     {
         "Name": "Jim Brown",
         "Position": "FB",
-        "Age": "Deceased",
+        "Age": -1,
         "Height": "6' 2''",
         "Weight": "232 lbs",
         "Active": "OUT",
@@ -1178,8 +1180,8 @@ const players = [
         "Active": "OUT",
         "College": "Kent State",
         "Jersey": 92,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "Pittsburgh Steelers"
     },
     {
@@ -1308,8 +1310,8 @@ const players = [
         "Active": "OUT",
         "College": "South Dakota State",
         "Jersey": 4,
-        "Draft Year": "-",
-        "Draft Round": "-",
+        "Draft Year": -1,
+        "Draft Round": -1,
         "Team": "New England Patriots"
     },
     {
@@ -1430,6 +1432,7 @@ const players = [
         "Team": "Pittsburgh Steelers"
     },
     {
+        "id": 100,
         "Name": "Jordan Shonlie Lublin",
         "Position": "LB",
         "Age": 31,

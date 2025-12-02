@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import players from '../src/players.js';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '../Components/ui/button.jsx';
-import { RotateCcw, Calendar, Target } from 'lucide-react';
+import { Calendar, Target } from 'lucide-react';
 
 import PlayerSearch from '../Components/game/PlayerSearch.jsx';
 import GuessRow from '../Components/game/GuessRow.jsx';
@@ -77,13 +76,13 @@ export default function Game() {
   if (isTouchdown) {
     return <Touchdown />;
   }
-  if (!correctPlayer) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 flex items-center justify-center">
-        <div className="text-white text-xl">Loading game...</div>
-      </div>
-    );
-  }
+  // if (!correctPlayer) {
+  //   return (
+  //     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 flex items-center justify-center">
+  //       <div className="text-white text-xl">Loading game...</div>
+  //     </div>
+  //   );
+  // }
 
 
 

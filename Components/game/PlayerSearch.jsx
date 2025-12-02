@@ -12,7 +12,7 @@ export default function PlayerSearch({ players, onGuess, disabled }) {
 
   const filteredPlayers = searchTerm.trim() 
     ? players.filter(p => 
-        p.name.toLowerCase().includes(searchTerm.toLowerCase())
+        p.Name.toLowerCase().includes(searchTerm.toLowerCase())
       ).slice(0, 8)
     : [];
 
@@ -90,12 +90,12 @@ export default function PlayerSearch({ players, onGuess, disabled }) {
                   {player.image_url && (
                     <img 
                       src={player.image_url} 
-                      alt={player.name}
+                      alt={player.Name}
                       className="w-10 h-10 rounded-full object-cover"
                     />
                   )}
                   <div>
-                    <p className="font-semibold text-white">{player.name}</p>
+                    <p className="font-semibold text-white">{player.Name}</p>
                   </div>
                 </div>
               </button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from '../../src/Components/ui/card.jsx';
-import { Trophy, Calendar, Ruler, Hash, Users, Award, ListOrdered } from "lucide-react";
+import { Trophy, Calendar, Ruler, Hash, Users, Award, ListOrdered, Activity, Badge, GraduationCap } from "lucide-react";
 
 const imageSource = (name) => {
     const parts = name.trim().split(/\s+/).join("_");
@@ -19,10 +19,10 @@ export default function PlayerReveal({ player, isWin }) {
         <div className="relative">
           <div className="relative h-80 overflow-hidden">
             <img 
-              src={imageSource(player.name)} 
-              alt={player.name}
+              src={imageSource(player.Name)} 
+              alt={player.Name}
               className="w-full h-full object-cover"
-              onError={e => { e.target.onerror = null; e.target.src = imageSource(player.name); }}
+              onError={e => { e.target.onerror = null; e.target.src = imageSource(player.Name); }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
           </div>
@@ -49,7 +49,7 @@ export default function PlayerReveal({ player, isWin }) {
             transition={{ delay: 0.2 }}
             className="text-4xl font-bold text-white mb-2"
           >
-            {player.name}
+            {player.Name}
           </motion.h2>
           
           <motion.p 
@@ -75,51 +75,72 @@ export default function PlayerReveal({ player, isWin }) {
             <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0 w-full" style={{minWidth:0, flex:1}}>
               <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
                 <Calendar className="w-4 h-4" />
-                <span className="text-sm">Year of Birth</span>
+                <span className="text-sm">Age</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.year_of_birth}</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.age}</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
               <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
                 <Hash className="w-4 h-4" />
-                <span className="text-sm">Jersi #</span>
+                <span className="text-sm">Jersey #</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.jersi_number}</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Jersey}</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
               <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
-                <Users className="w-4 h-4" />
+                <Activity className="w-4 h-4" />
+                <span className="text-sm">Active</span>
+              </div>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Active}</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
+              <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
+                <Badge className="w-4 h-4" />
                 <span className="text-sm">Position</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.position_group}</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Position}</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
               <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
                 <Award className="w-4 h-4" />
                 <span className="text-sm">Draft Year</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.nfl_draft_year}</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player["Draft Year"]}</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
               <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
                 <ListOrdered className="w-4 h-4" />
                 <span className="text-sm">Draft Round</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.nfl_draft_round}</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player["Draft Round"]}</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
               <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
                 <Ruler className="w-4 h-4" />
                 <span className="text-sm">Height</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.height}"</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Height}"</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
               <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
                 <Trophy className="w-4 h-4" />
                 <span className="text-sm">Weight</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.weight} lb</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Weight}</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
+              <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
+                <GraduationCap className="w-4 h-4" />
+                <span className="text-sm">College</span>
+              </div>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.College}</p>
+            </div>
+            <div className="bg-gray-800 rounded-lg p-4 flex flex-col min-w-0">
+              <div className="flex items-center gap-2 text-gray-400 mb-2 min-w-0">
+                <Users className="w-4 h-4" />
+                <span className="text-sm">Team</span>
+              </div>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Team}</p>
             </div>
           </motion.div>
         </div>

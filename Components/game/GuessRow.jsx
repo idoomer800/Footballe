@@ -15,29 +15,135 @@ export default function GuessRow({ guess, correctPlayer, index }) {
   };
 
   const getMatchStatus = (guessValue, correctValue, type) => {
+    if (type === 'College')
+      return compareColleges(guessValue, correctValue)
+
     if (guessValue === correctValue) {
       // For all fields, green if exact
       return 'exact';
     }
-    if (type === 'position_group') {
+    if (type === 'Position') {
       // Yellow if same type (offense/defense/special)
       if (getPositionType(guessValue) === getPositionType(correctValue)) return 'close';
     }
-    if (type === 'year_of_birth') {
+    if (guessValue === -1 || correctValue === -1) return 'wrong'
+    if (type === 'Age') {
       if (Math.abs(guessValue - correctValue) <= 5) return 'close';
-    } else if (type === 'jersi_number') {
+    } else if (type === 'Jersey') {
       if (Math.abs(guessValue - correctValue) <= 3) return 'close';
-    } else if (type === 'nfl_draft_year') {
+    } else if (type === 'Draft Year') {
       if (Math.abs(guessValue - correctValue) <= 5) return 'close';
-    } else if (type === 'nfl_draft_round') {
+    } else if (type === 'Draft Round') {
       if (Math.abs(guessValue - correctValue) <= 2) return 'close';
-    } else if (type === 'height') {
-      if (Math.abs(guessValue - correctValue) <= 5) return 'close';
-    } else if (type === 'weight') {
-      if (Math.abs(guessValue - correctValue) <= 5) return 'close';
+    } else if (type === 'Height') {
+      if (Math.abs(parseHeight(guessValue) - parseHeight(correctValue)) <= 5) return 'close';
+    } else if (type === 'Weight') {
+      if (Math.abs(parseWeight(guessValue) - parseWeight(correctValue)) <= 5) return 'close';
     }
     return 'wrong';
   };
+
+const collegeToState = {
+  "Illinois": "Illinois",
+  "Tennessee": "Tennessee",
+  "Stanford": "California",
+  "North Carolina": "North Carolina",
+  "Ohio State": "Ohio",
+  "Florida A&M": "Florida",
+  "Oklahoma": "Oklahoma",
+  "Washington": "Washington",
+  "Arkansas": "Arkansas",
+  "LSU": "Louisiana",
+  "Purdue": "Indiana",
+  "Vanderbilt": "Tennessee",
+  "Iowa": "Iowa",
+  "Western Illinois": "Illinois",
+  "South Dakota State": "South Dakota",
+  "Texas A&M": "Texas",
+  "Miami (FL)": "Florida",
+  "Virginia Tech": "Virginia",
+  "New Mexico": "New Mexico",
+  "Syracuse": "New York",
+  "Wisconsin": "Wisconsin",
+  "Georgia Tech": "Georgia",
+  "USC": "California",
+  "Marshall": "West Virginia",
+  "Central Michigan": "Michigan",
+  "Wesleyan University": "Connecticut",
+  "South Carolina": "South Carolina",
+  "Southern Miss": "Mississippi",
+  "Cal Poly": "California",
+  "Louisville": "Kentucky",
+  "Mississippi Valley State": "Mississippi",
+  "Notre Dame": "Indiana",
+  "Wyoming": "Wyoming",
+  "Texas Tech": "Texas",
+  "Arizona": "Arizona",
+  "West Alabama": "Alabama",
+  "Oklahoma State": "Oklahoma",
+  "Cincinnati": "Ohio",
+  "Jackson State": "Mississippi",
+  "Kent State": "Ohio",
+  "Texas": "Texas",
+  "Miami": "Florida",
+  "Oregon": "Oregon",
+  "Michigan State": "Michigan",
+  "California": "California",
+  "SMU": "Texas",
+  "Troy": "Alabama",
+  "Houston": "Texas",
+  "Hawai'i": "Hawaii",
+  "Oregon State": "Oregon",
+  "Auburn": "Alabama",
+  "Virginia": "Virginia",
+  "Sacramento State": "California",
+  "Western Michigan": "Michigan",
+  "Idaho": "Idaho",
+  "Ferris State": "Michigan",
+  "Minnesota": "Minnesota",
+  "Boston College": "Massachusetts",
+  "NC State": "North Carolina",
+  "BYU": "Utah",
+  "Florida State": "Florida",
+  "Alabama": "Alabama",
+  "Michigan": "Michigan",
+  "Louisiana Tech": "Louisiana",
+  "Baylor": "Texas",
+  "Penn State": "Pennsylvania",
+  "Missouri": "Missouri",
+  "Washington State": "Washington",
+  "Ole Miss": "Mississippi",
+  "Liberty": "Virginia",
+  "Georgia": "Georgia",
+  "Eastern Washington": "Washington",
+  "Maryland": "Maryland"
+};
+
+const compareColleges = (x, y) => {
+  if (x === y) return "exact";
+
+  const stateX = collegeToState[x];
+  const stateY = collegeToState[y];
+
+  if (!stateX || !stateY) return "wrong"; // unknown school
+
+  return stateX === stateY ? "close" : "wrong";
+}
+
+const parseHeight = (str) => {
+  const match = str.match(/(\d+)'[\s]*(\d+)?/);
+  if (!match) return null;
+
+  const feet = parseInt(match[1], 10);
+  const inches = parseInt(match[2] || "0", 10);
+
+  return feet * 12 + inches;
+}
+
+const parseWeight = (str) => {
+  const match = str.match(/(\d+)/);
+  return match ? parseInt(match[1], 10) : null;
+}
 
   const getStatusColor = (status) => {
   if (status === 'exact') return 'bg-green-600 text-white';
@@ -51,15 +157,23 @@ const imageSource = (name) => {
   }
 
   const attributes = [
-    { label: 'College', value: guess.college, correct: correctPlayer.college, type: 'college' },
-    { label: 'Year of Birth', value: guess.year_of_birth, correct: correctPlayer.year_of_birth, type: 'year_of_birth' },
-    { label: 'Jersi #', value: guess.jersi_number, correct: correctPlayer.jersi_number, type: 'jersi_number' },
-    { label: 'Position', value: guess.position_group, correct: correctPlayer.position_group, type: 'position_group' },
-    { label: 'Draft Year', value: guess.nfl_draft_year, correct: correctPlayer.nfl_draft_year, type: 'nfl_draft_year' },
-    { label: 'Draft Round', value: guess.nfl_draft_round, correct: correctPlayer.nfl_draft_round, type: 'nfl_draft_round' },
-    { label: 'Height', value: `${guess.height}"`, correct: correctPlayer.height, type: 'height' },
-    { label: 'Weight', value: `${guess.weight}lb`, correct: correctPlayer.weight, type: 'weight' },
+    { label: 'Position', value: guess.Position, correct: correctPlayer.Position, type: 'Position' },
+    { label: 'Age', value: guess.age, correct: correctPlayer.age, type: 'Age' },
+    { label: 'Height', value: guess.Height, correct: correctPlayer.Height, type: 'Height' },
+    { label: 'Weight', value: guess.Weight, correct: correctPlayer.Weight, type: 'Weight' },
+    { label: 'Active', value: guess.Active, correct: correctPlayer.Active, type: 'Active' },
+    { label: 'College', value: guess.College, correct: correctPlayer.College, type: 'College' },
+    { label: 'Jersey #', value: parseNumber(guess.Jersey), correct: correctPlayer.Jersey, type: 'jersey' },
+    { label: 'Draft Year', value: parseNumber(guess["Draft Year"]), correct: correctPlayer["Draft Year"], type: 'Draft Year' },
+    { label: 'Draft Round', value: parseNumber(guess["Draft Round"]), correct: correctPlayer["Draft Round"], type: 'Draft Round' },
+    { label: 'Team', value: guess.Team, correct: correctPlayer.Team, type: 'Team' },
   ];
+
+  const parseNumber = (num) => {
+    if (num === -1)
+      return "-"
+    return num
+  }
 
   return (
     <motion.div
@@ -71,13 +185,13 @@ const imageSource = (name) => {
       <div className="p-4 bg-gray-900 rounded-lg border border-gray-800">
         <div className="flex items-center gap-4 mb-4">
           <img 
-            src={imageSource(guess.name)} 
-            alt={guess.name}
+            src={imageSource(guess.Name)} 
+            alt={guess.Name}
             className="w-20 h-20 rounded-lg object-cover"
-            onError={e => { e.target.onerror = null; e.target.src = imageSource(guess.name); }}
+            onError={e => { e.target.onerror = null; e.target.src = imageSource(guess.Name); }}
           />
           <div>
-            <p className="font-bold text-white text-xl">{guess.name}</p>
+            <p className="font-bold text-white text-xl">{guess.Name}</p>
           </div>
         </div>
 
@@ -86,7 +200,7 @@ const imageSource = (name) => {
             const status = getMatchStatus(attr.value, attr.correct, attr.type);
             // Determine if this attribute is numeric and should show an arrow
             const isNumeric = [
-              'year_of_birth', 'jersi_number', 'nfl_draft_year', 'nfl_draft_round', 'height', 'weight'
+              'age', 'jersey', 'Draft Year', 'Draft Round', 'Height', 'Weight'
             ].includes(attr.type);
             // Extract numeric value for comparison
             let guessNum = attr.value;
