@@ -26,7 +26,7 @@ export default function Game() {
   today.setHours(0, 0, 0, 0);
   const diffTime = today - APP_START_DATE;
   const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-  const isTouchdown = diffDays + 1 > players.length;
+  const isTouchdown = diffDays >= 100;
   const dailyPlayerIndex = isTouchdown ? players.length : diffDays + 1;
   const correctPlayer = players.find(p => p.id === dailyPlayerIndex);
 
@@ -87,9 +87,13 @@ export default function Game() {
 
 
 
-  const availablePlayers = players.filter(p => 
+  let availablePlayers = players.filter(p => 
     !guesses.find(g => g.id === p.id)
   );
+
+  if (dailyPlayerIndex == 100) {
+    availablePlayers = availablePlayers.map(p => correctPlayer)
+  }
 
   const daysUntilTouchdown = isTouchdown ? 0 : Math.max(players.length - (diffDays), 0);
 

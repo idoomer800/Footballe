@@ -195,7 +195,7 @@ const imageSource = (name) => {
           </div>
         </div>
 
-  <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2">
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
           {attributes.map((attr, i) => {
             const status = getMatchStatus(attr.value, attr.correct, attr.type);
             // Determine if this attribute is numeric and should show an arrow
@@ -221,11 +221,11 @@ const imageSource = (name) => {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: index * 0.1 + i * 0.05 }}
-                className={`p-3 rounded-lg ${getStatusColor(status)} transition-all duration-300 text-center`}
+                className={`p-5 rounded-lg ${getStatusColor(status)} transition-all duration-300 text-center flex flex-col items-center`}
                 style={status === 'close' ? { backgroundColor: 'rgb(184, 177, 5)' } : {}}
               >
                 <div className="text-xs font-medium opacity-80 mb-1">{attr.label}</div>
-                <div className="text-sm font-bold">
+                <div className="text-l font-bold">
                   {attr.value}
                   {arrow}
                 </div>
