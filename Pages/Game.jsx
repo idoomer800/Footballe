@@ -10,8 +10,9 @@ import ConfettiEffect from '../Components/game/ConfettiEffect.jsx';
 import Touchdown from '../Components/game/Touchdown.jsx';
 
 // The first day the app is active (set to 2025-07-01, more than 100 days before 2025-10-27)
-const APP_START_DATE = new Date('2025-11-15');
+const APP_START_DATE = new Date('2025-12-14');
 const MAX_GUESSES = 10;
+const LAST_DAY = 100;
 
 export default function Game() {
   const [guesses, setGuesses] = useState([]);
@@ -22,11 +23,12 @@ export default function Game() {
 
 
   // Calculate days since launch and handle touchdown logic
+  APP_START_DATE.setHours(0, 0, 0, 0);
   const today = new Date();
   today.setHours(0, 0, 0, 0);
   const diffTime = today - APP_START_DATE;
   const diffDays = Math.max(0, Math.floor(diffTime / (1000 * 60 * 60 * 24)));
-  const isTouchdown = diffDays >= 100;
+  const isTouchdown = diffDays >= LAST_DAY;
   const dailyPlayerIndex = isTouchdown ? players.length : diffDays + 1;
   const correctPlayer = players.find(p => p.id === dailyPlayerIndex);
 
@@ -95,7 +97,7 @@ export default function Game() {
     availablePlayers = availablePlayers.map(p => correctPlayer)
   }
 
-  const daysUntilTouchdown = isTouchdown ? 0 : Math.max(players.length - (diffDays), 0);
+  const daysUntilTouchdown = isTouchdown ? 0 : Math.max(LAST_DAY - (diffDays) - 1, 0);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 p-4 md:p-8">

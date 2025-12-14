@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Input } from "../../src/Components/ui/input.jsx";
 import { Search } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import getImageURL from '../../src/utils/image-util.js';
 
 export default function PlayerSearch({ players, onGuess, disabled }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -51,7 +52,7 @@ export default function PlayerSearch({ players, onGuess, disabled }) {
 
   const imageSource = (name) => {
     const parts = name.trim().split(/\s+/).join("_");
-    return `/player_images/${parts}.jpg`
+    return getImageURL(`${parts}.jpg`)
   }
 
   return (
@@ -92,14 +93,12 @@ export default function PlayerSearch({ players, onGuess, disabled }) {
                 } ${index !== filteredPlayers.length - 1 ? 'border-b border-gray-800' : ''}`}
               >
                 <div className="flex items-center gap-3">
-                  {player.image_url && (
                     <img 
-                      src={imageSource(guess.Name)} 
-                      alt={guess.Name}
-                      className="w-20 h-20 rounded-lg object-cover"
-                      onError={e => { e.target.onerror = null; e.target.src = imageSource(guess.Name); }}
+                      src={imageSource(player.Name)} 
+                      alt={player.Name}
+                      className="w-10 h-10 rounded-lg object-cover"
+                      onError={e => { e.target.onerror = null; e.target.src = imageSource(player.Name); }}
                     />
-                  )}
                   <div>
                     <p className="font-semibold text-white">{player.Name}</p>
                   </div>

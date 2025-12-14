@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from '../../src/Components/ui/card.jsx';
 import { Trophy, Calendar, Ruler, Hash, Users, Award, ListOrdered, Activity, Badge, GraduationCap } from "lucide-react";
+import getImageURL from '../../src/utils/image-util.js';
 
 const imageSource = (name) => {
     const parts = name.trim().split(/\s+/).join("_");
-    return `/player_images/${parts}.jpg`
+    return getImageURL(`${parts}.jpg`)
   }
 
 export default function PlayerReveal({ player, isWin }) {
@@ -119,7 +120,7 @@ export default function PlayerReveal({ player, isWin }) {
                 <Ruler className="w-4 h-4" />
                 <span className="text-sm">Height</span>
               </div>
-              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Height}"</p>
+              <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>{player.Height}</p>
             </div>
             <div className="bg-green-600 rounded-lg p-4 flex flex-col min-w-0">
               <div className="flex items-center gap-2 text-gray-300 mb-2 min-w-0">

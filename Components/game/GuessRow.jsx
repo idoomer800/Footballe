@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import getImageURL from '../../src/utils/image-util';
 
 export default function GuessRow({ guess, correctPlayer, index }) {
   // Helper to group positions
@@ -159,7 +160,7 @@ const parseNumber = (num) => {
 
 const imageSource = (name) => {
     const parts = name.trim().split(/\s+/).join("_");
-    return `/player_images/${parts}.jpg`
+    return getImageURL(`${parts}.jpg`)
   }
 
   const attributes = [
@@ -200,7 +201,7 @@ const imageSource = (name) => {
             const status = getMatchStatus(attr.value, attr.correct, attr.type);
             // Determine if this attribute is numeric and should show an arrow
             const isNumeric = [
-              'age', 'jersey', 'Draft Year', 'Draft Round', 'Height', 'Weight'
+              'Age', 'jersey', 'Draft Year', 'Draft Round', 'Height', 'Weight'
             ].includes(attr.type);
             // Extract numeric value for comparison
             let guessNum = attr.value;
