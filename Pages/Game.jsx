@@ -10,7 +10,7 @@ import ConfettiEffect from '../Components/game/ConfettiEffect.jsx';
 import Touchdown from '../Components/game/Touchdown.jsx';
 
 // The first day the app is active (set to 2025-07-01, more than 100 days before 2025-10-27)
-const APP_START_DATE = new Date('2025-12-14');
+const APP_START_DATE = new Date('2025-12-21');
 const MAX_GUESSES = 10;
 const LAST_DAY = 100;
 
@@ -61,7 +61,7 @@ export default function Game() {
 
     const newGuesses = [...guesses, player];
     setGuesses(newGuesses);
-    console.log(correctPlayer)
+    //console.log(correctPlayer)
     if (player.id === correctPlayer.id) {
       setGameState('won');
       setShowConfetti(true);

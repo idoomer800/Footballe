@@ -37,7 +37,8 @@ export default function GuessRow({ guess, correctPlayer, index }) {
     } else if (type === 'Draft Round') {
       if (Math.abs(guessValue - correctValue) <= 2) return 'close';
     } else if (type === 'Height') {
-      if (Math.abs(parseHeight(guessValue) - parseHeight(correctValue)) <= 5) return 'close';
+      if (Math.abs(parseHeight(guessValue) - parseHeight(correctValue)) <= 5) {
+        return 'close'};
     } else if (type === 'Weight') {
       if (Math.abs(parseWeight(guessValue) - parseWeight(correctValue)) <= 5) return 'close';
     }
@@ -209,10 +210,14 @@ const imageSource = (name) => {
             if (typeof guessNum === 'string' && guessNum.match(/^\d+/)) guessNum = parseInt(guessNum);
             if (typeof correctNum === 'string' && correctNum.match(/^\d+/)) correctNum = parseInt(correctNum);
             let arrow = null;
-            if (isNumeric && guessNum !== correctNum) {
+            if (attr.type == "Height") {
+              guessNum = parseHeight(attr.value)
+              correctNum = parseHeight(attr.correct)
+            }
+            if (isNumeric && guessNum !== correctNum && guessNum !== "-") {
               if (guessNum > correctNum) {
                 arrow = <ChevronDown className="inline w-4 h-4 text-gray-300 ml-1 align-middle" title="Too high" />;
-              } else if (guessNum < correctNum) {
+              } else {
                 arrow = <ChevronUp className="inline w-4 h-4 text-gray-300 ml-1 align-middle" title="Too low" />;
               }
             }
