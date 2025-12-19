@@ -6,9 +6,9 @@ import getImageURL from '../../src/utils/image-util';
 export default function GuessRow({ guess, correctPlayer, index }) {
   // Helper to group positions
   const getPositionType = (position) => {
-    const offense = ["Quarterback", "Running Back", "Wide Receiver", "Tight End", "Offensive Lineman"];
-    const defense = ["Linebacker", "Cornerback", "Safety", "Defensive End"];
-    const special = ["Kicker"];
+    const offense = ["QB", "RB", "WR", "TE", "C", "OT", "FB", "G"];
+    const defense = ["LB", "CB", "S", "DE", "DT"];
+    const special = ["K", "P", "LS"];
     if (offense.includes(position)) return 'offense';
     if (defense.includes(position)) return 'defense';
     if (special.includes(position)) return 'special';
@@ -32,9 +32,9 @@ export default function GuessRow({ guess, correctPlayer, index }) {
       if (Math.abs(guessValue - correctValue) <= 5) return 'close';
     } else if (type === 'Jersey') {
       if (Math.abs(guessValue - correctValue) <= 3) return 'close';
-    } else if (type === 'Draft Year') {
+    } else if (type === 'Draft_Year') {
       if (Math.abs(guessValue - correctValue) <= 5) return 'close';
-    } else if (type === 'Draft Round') {
+    } else if (type === 'Draft_Round') {
       if (Math.abs(guessValue - correctValue) <= 2) return 'close';
     } else if (type === 'Height') {
       if (Math.abs(parseHeight(guessValue) - parseHeight(correctValue)) <= 5) {
@@ -172,8 +172,8 @@ const imageSource = (name) => {
     { label: 'Active', value: guess.Active, correct: correctPlayer.Active, type: 'Active' },
     { label: 'College', value: guess.College, correct: correctPlayer.College, type: 'College' },
     { label: 'Jersey #', value: parseNumber(guess.Jersey), correct: correctPlayer.Jersey, type: 'jersey' },
-    { label: 'Draft Year', value: parseNumber(guess["Draft Year"]), correct: correctPlayer["Draft Year"], type: 'Draft Year' },
-    { label: 'Draft Round', value: parseNumber(guess["Draft Round"]), correct: correctPlayer["Draft Round"], type: 'Draft Round' },
+    { label: 'Draft_Year', value: parseNumber(guess["Draft_Year"]), correct: correctPlayer["Draft_Year"], type: 'Draft_Year' },
+    { label: 'Draft_Round', value: parseNumber(guess["Draft_Round"]), correct: correctPlayer["Draft_Round"], type: 'Draft_Round' },
     { label: 'Team', value: guess.Team, correct: correctPlayer.Team, type: 'Team' },
   ];
 
@@ -202,7 +202,7 @@ const imageSource = (name) => {
             const status = getMatchStatus(attr.value, attr.correct, attr.type);
             // Determine if this attribute is numeric and should show an arrow
             const isNumeric = [
-              'Age', 'jersey', 'Draft Year', 'Draft Round', 'Height', 'Weight'
+              'Age', 'jersey', 'Draft_Year', 'Draft_Round', 'Height', 'Weight'
             ].includes(attr.type);
             // Extract numeric value for comparison
             let guessNum = attr.value;
@@ -214,7 +214,7 @@ const imageSource = (name) => {
               guessNum = parseHeight(attr.value)
               correctNum = parseHeight(attr.correct)
             }
-            if (isNumeric && guessNum !== correctNum && guessNum !== "-") {
+            if (isNumeric && guessNum !== correctNum && guessNum !== "-" && guessNum !== "deceased") {
               if (guessNum > correctNum) {
                 arrow = <ChevronDown className="inline w-4 h-4 text-gray-300 ml-1 align-middle" title="Too high" />;
               } else {

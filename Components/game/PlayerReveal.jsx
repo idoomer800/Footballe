@@ -115,7 +115,7 @@ export default function PlayerReveal({ player, isWin }) {
                 <span className="text-sm">Draft Year</span>
               </div>
               <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>
-                {player["Draft Year"]}
+                {player.Draft_Year}
               </p>
             </div>
             <div className="bg-green-600 rounded-lg p-4 flex flex-col min-w-0">
@@ -124,7 +124,7 @@ export default function PlayerReveal({ player, isWin }) {
                 <span className="text-sm">Draft Round</span>
               </div>
               <p className="text-2xl font-bold text-white min-w-0 whitespace-nowrap overflow-x-auto" style={{wordBreak: 'normal', overflowWrap: 'normal'}}>
-                {player["Draft Round"]}
+                {player.Draft_Round}
               </p>
             </div>
             {player.id !== 100 && (

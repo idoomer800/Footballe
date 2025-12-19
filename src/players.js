@@ -9,8 +9,8 @@ const players = [
         "Active": "Questionable",
         "College": "Illinois",
         "Jersey": 16,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -23,8 +23,8 @@ const players = [
         "Active": "Active",
         "College": "Tennessee",
         "Jersey": 11,
-        "Draft Year": 2017,
-        "Draft Round": 4,
+        "Draft_Year": 2017,
+        "Draft_Round": 4,
         "Team": "New England Patriots"
     },
     {
@@ -37,8 +37,8 @@ const players = [
         "Active": "Active",
         "College": "North Carolina",
         "Jersey": 10,
-        "Draft Year": 2024,
-        "Draft Round": 1,
+        "Draft_Year": 2024,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {
@@ -51,8 +51,8 @@ const players = [
         "Active": "Active",
         "College": "Ohio State",
         "Jersey": 32,
-        "Draft Year": 2025,
-        "Draft Round": 2,
+        "Draft_Year": 2025,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {
@@ -65,8 +65,8 @@ const players = [
         "Active": "Active",
         "College": "Florida A&M",
         "Jersey": 26,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -79,8 +79,8 @@ const players = [
         "Active": "OUT",
         "College": "Oklahoma",
         "Jersey": 38,
-        "Draft Year": 2021,
-        "Draft Round": 4,
+        "Draft_Year": 2021,
+        "Draft_Round": 4,
         "Team": "New England Patriots"
     },
     {
@@ -93,8 +93,8 @@ const players = [
         "Active": "Questionable",
         "College": "LSU",
         "Jersey": 9,
-        "Draft Year": 2023,
-        "Draft Round": 6,
+        "Draft_Year": 2023,
+        "Draft_Round": 6,
         "Team": "New England Patriots"
     },
     {
@@ -107,8 +107,8 @@ const players = [
         "Active": "Active",
         "College": "Eastern Washington",
         "Jersey": 86,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -121,8 +121,8 @@ const players = [
         "Active": "Active",
         "College": "Maryland",
         "Jersey": 8,
-        "Draft Year": 2015,
-        "Draft Round": 5,
+        "Draft_Year": 2015,
+        "Draft_Round": 5,
         "Team": "New England Patriots"
     },
     {
@@ -135,8 +135,8 @@ const players = [
         "Active": "Active",
         "College": "Liberty",
         "Jersey": 3,
-        "Draft Year": 2023,
-        "Draft Round": 6,
+        "Draft_Year": 2023,
+        "Draft_Round": 6,
         "Team": "New England Patriots"
     },
     {
@@ -149,8 +149,8 @@ const players = [
         "Active": "Active",
         "College": "North Carolina",
         "Jersey": 13,
-        "Draft Year": 2017,
-        "Draft Round": 4,
+        "Draft_Year": 2017,
+        "Draft_Round": 4,
         "Team": "New England Patriots"
     },
     {
@@ -163,8 +163,8 @@ const players = [
         "Active": "Active",
         "College": "Baylor",
         "Jersey": 13,
-        "Draft Year": 2019,
-        "Draft Round": 3,
+        "Draft_Year": 2019,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -177,8 +177,8 @@ const players = [
         "Active": "Active",
         "College": "Washington State",
         "Jersey": 18,
-        "Draft Year": 2025,
-        "Draft Round": 3,
+        "Draft_Year": 2025,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -191,8 +191,8 @@ const players = [
         "Active": "Active",
         "College": "Arkansas",
         "Jersey": 85,
-        "Draft Year": 2016,
-        "Draft Round": 2,
+        "Draft_Year": 2016,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {
@@ -205,8 +205,8 @@ const players = [
         "Active": "Questionable",
         "College": "Stanford",
         "Jersey": 81,
-        "Draft Year": 2016,
-        "Draft Round": 3,
+        "Draft_Year": 2016,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -219,8 +219,8 @@ const players = [
         "Active": "Active",
         "College": "Washington",
         "Jersey": 37,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -233,8 +233,8 @@ const players = [
         "Active": "Active",
         "College": "NC State",
         "Jersey": 65,
-        "Draft Year": 2019,
-        "Draft Round": 1,
+        "Draft_Year": 2019,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {
@@ -247,8 +247,8 @@ const players = [
         "Active": "Active",
         "College": "Ole Miss",
         "Jersey": 77,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -261,8 +261,8 @@ const players = [
         "Active": "Active",
         "College": "Georgia",
         "Jersey": 58,
-        "Draft Year": 2025,
-        "Draft Round": 3,
+        "Draft_Year": 2025,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -275,8 +275,8 @@ const players = [
         "Active": "Active",
         "College": "Missouri",
         "Jersey": 52,
-        "Draft Year": 2025,
-        "Draft Round": 7,
+        "Draft_Year": 2025,
+        "Draft_Round": 7,
         "Team": "New England Patriots"
     },
     {
@@ -289,8 +289,8 @@ const players = [
         "Active": "Active",
         "College": "LSU",
         "Jersey": 66,
-        "Draft Year": 2025,
-        "Draft Round": 1,
+        "Draft_Year": 2025,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {
@@ -303,8 +303,8 @@ const players = [
         "Active": "Active",
         "College": "Illinois",
         "Jersey": 59,
-        "Draft Year": 2022,
-        "Draft Round": 6,
+        "Draft_Year": 2022,
+        "Draft_Round": 6,
         "Team": "New England Patriots"
     },
     {
@@ -317,8 +317,8 @@ const players = [
         "Active": "Active",
         "College": "Virginia",
         "Jersey": 76,
-        "Draft Year": 2014,
-        "Draft Round": 3,
+        "Draft_Year": 2014,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -331,8 +331,8 @@ const players = [
         "Active": "Active",
         "College": "Michigan",
         "Jersey": 71,
-        "Draft Year": 2020,
-        "Draft Round": 6,
+        "Draft_Year": 2020,
+        "Draft_Round": 6,
         "Team": "New England Patriots"
     },
     {
@@ -345,8 +345,8 @@ const players = [
         "Active": "Questionable",
         "College": "Penn State",
         "Jersey": 70,
-        "Draft Year": 2024,
-        "Draft Round": 3,
+        "Draft_Year": 2024,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -359,8 +359,8 @@ const players = [
         "Active": "Questionable",
         "College": "Louisiana Tech",
         "Jersey": 97,
-        "Draft Year": 2021,
-        "Draft Round": 3,
+        "Draft_Year": 2021,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -373,8 +373,8 @@ const players = [
         "Active": "Active",
         "College": "Alabama",
         "Jersey": 90,
-        "Draft Year": 2021,
-        "Draft Round": 2,
+        "Draft_Year": 2021,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {
@@ -387,8 +387,8 @@ const players = [
         "Active": "Active",
         "College": "NC State",
         "Jersey": 94,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -401,8 +401,8 @@ const players = [
         "Active": "Questionable",
         "College": "Florida State",
         "Jersey": 92,
-        "Draft Year": 2025,
-        "Draft Round": 4,
+        "Draft_Year": 2025,
+        "Draft_Round": 4,
         "Team": "New England Patriots"
     },
     {
@@ -415,8 +415,8 @@ const players = [
         "Active": "Active",
         "College": "Arkansas",
         "Jersey": 55,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -429,8 +429,8 @@ const players = [
         "Active": "Active",
         "College": "BYU",
         "Jersey": 95,
-        "Draft Year": 2021,
-        "Draft Round": 7,
+        "Draft_Year": 2021,
+        "Draft_Round": 7,
         "Team": "New England Patriots"
     },
     {
@@ -443,8 +443,8 @@ const players = [
         "Active": "Active",
         "College": "LSU",
         "Jersey": 44,
-        "Draft Year": 2020,
-        "Draft Round": 1,
+        "Draft_Year": 2020,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {
@@ -457,8 +457,8 @@ const players = [
         "Active": "Questionable",
         "College": "Idaho",
         "Jersey": 53,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -471,8 +471,8 @@ const players = [
         "Active": "Active",
         "College": "Minnesota",
         "Jersey": 51,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -485,8 +485,8 @@ const players = [
         "Active": "Active",
         "College": "Alabama",
         "Jersey": 33,
-        "Draft Year": 2020,
-        "Draft Round": 3,
+        "Draft_Year": 2020,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -499,8 +499,8 @@ const players = [
         "Active": "Active",
         "College": "Boston College",
         "Jersey": 2,
-        "Draft Year": 2018,
-        "Draft Round": 2,
+        "Draft_Year": 2018,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {
@@ -513,8 +513,8 @@ const players = [
         "Active": "Active",
         "College": "Sacramento State",
         "Jersey": 15,
-        "Draft Year": 2023,
-        "Draft Round": 3,
+        "Draft_Year": 2023,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -527,8 +527,8 @@ const players = [
         "Active": "Active",
         "College": "Ferris State",
         "Jersey": 45,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -541,8 +541,8 @@ const players = [
         "Active": "Active",
         "College": "Cal Poly",
         "Jersey": 91,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -555,8 +555,8 @@ const players = [
         "Active": "Active",
         "College": "Western Michigan",
         "Jersey": 14,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -569,8 +569,8 @@ const players = [
         "Active": "Active",
         "College": "Hawai'i",
         "Jersey": 48,
-        "Draft Year": 2019,
-        "Draft Round": 2,
+        "Draft_Year": 2019,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {
@@ -583,8 +583,8 @@ const players = [
         "Active": "Active",
         "College": "Oregon State",
         "Jersey": 28,
-        "Draft Year": 2023,
-        "Draft Round": 7,
+        "Draft_Year": 2023,
+        "Draft_Round": 7,
         "Team": "New England Patriots"
     },
     {
@@ -597,8 +597,8 @@ const players = [
         "Active": "Active",
         "College": "Auburn",
         "Jersey": 7,
-        "Draft Year": 2018,
-        "Draft Round": 2,
+        "Draft_Year": 2018,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {
@@ -611,8 +611,8 @@ const players = [
         "Active": "Active",
         "College": "Oregon",
         "Jersey": 0,
-        "Draft Year": 2023,
-        "Draft Round": 1,
+        "Draft_Year": 2023,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {
@@ -625,8 +625,8 @@ const players = [
         "Active": "Active",
         "College": "Houston",
         "Jersey": 25,
-        "Draft Year": 2022,
-        "Draft Round": 3,
+        "Draft_Year": 2022,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {
@@ -639,8 +639,8 @@ const players = [
         "Active": "Active",
         "College": "SMU",
         "Jersey": 22,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {
@@ -653,8 +653,8 @@ const players = [
         "Active": "Active",
         "College": "California",
         "Jersey": 21,
-        "Draft Year": 2020,
-        "Draft Round": 4,
+        "Draft_Year": 2020,
+        "Draft_Round": 4,
         "Team": "New England Patriots"
     },
     {
@@ -667,8 +667,8 @@ const players = [
         "Active": "Active",
         "College": "Troy",
         "Jersey": 24,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {   
@@ -681,8 +681,8 @@ const players = [
         "Active": "Active",
         "College": "Ole Miss",
         "Jersey": 23,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {   
@@ -695,8 +695,8 @@ const players = [
         "Active": "Active",
         "College": "Texas",
         "Jersey": 41,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {   
@@ -709,22 +709,22 @@ const players = [
         "Active": "Active",
         "College": "California",
         "Jersey": 31,
-        "Draft Year": 2025,
-        "Draft Round": 4,
+        "Draft_Year": 2025,
+        "Draft_Round": 4,
         "Team": "New England Patriots"
     },
     {   
         "id": 49,
         "Name": "Andy Borregales",
-        "Position": "PK",
+        "Position": "K",
         "Age": 22,
         "Height": "5' 11\"",
         "Weight": "202 lbs",
         "Active": "Active",
         "College": "Miami",
         "Jersey": 36,
-        "Draft Year": 2025,
-        "Draft Round": 6,
+        "Draft_Year": 2025,
+        "Draft_Round": 6,
         "Team": "New England Patriots"
     },
     {   
@@ -737,8 +737,8 @@ const players = [
         "Active": "Active",
         "College": "Michigan State",
         "Jersey": 17,
-        "Draft Year": 2023,
-        "Draft Round": 6,
+        "Draft_Year": 2023,
+        "Draft_Round": 6,
         "Team": "New England Patriots"
     },
     {   
@@ -751,8 +751,8 @@ const players = [
         "Active": "Active",
         "College": "Vanderbilt",
         "Jersey": 47,
-        "Draft Year": 2025,
-        "Draft Round": 7,
+        "Draft_Year": 2025,
+        "Draft_Round": 7,
         "Team": "New England Patriots"
     },
     {   
@@ -765,8 +765,8 @@ const players = [
         "Active": "OUT",
         "College": "Michigan",
         "Jersey": 12,
-        "Draft Year": 2000,
-        "Draft Round": 6,
+        "Draft_Year": 2000,
+        "Draft_Round": 6,
         "Team": "New England Patriots"
     },
     {   
@@ -779,8 +779,8 @@ const players = [
         "Active": "Active",
         "College": "Texas Tech",
         "Jersey": 15,
-        "Draft Year": 2017,
-        "Draft Round": 1,
+        "Draft_Year": 2017,
+        "Draft_Round": 1,
         "Team": "Kansas CIty Chiefs"
     },
     {   
@@ -793,8 +793,8 @@ const players = [
         "Active": "OUT",
         "College": "Tennessee",
         "Jersey": 18,
-        "Draft Year": 1998,
-        "Draft Round": 1,
+        "Draft_Year": 1998,
+        "Draft_Round": 1,
         "Team": "Indianapolis Colts"
     },
     {   
@@ -807,8 +807,8 @@ const players = [
         "Active": "Active",
         "College": "California",
         "Jersey": 12,
-        "Draft Year": 2005,
-        "Draft Round": 1,
+        "Draft_Year": 2005,
+        "Draft_Round": 1,
         "Team": "Green Bay Packers"
     },
     {   
@@ -821,8 +821,8 @@ const players = [
         "Active": "OUT",
         "College": "Notre Dame",
         "Jersey": 16,
-        "Draft Year": 1979,
-        "Draft Round": 3,
+        "Draft_Year": 1979,
+        "Draft_Round": 3,
         "Team": "San Francisco 49ers"
     },
     {   
@@ -835,8 +835,8 @@ const players = [
         "Active": "OUT",
         "College": "Southern Miss",
         "Jersey": 4,
-        "Draft Year": 1991,
-        "Draft Round": 2,
+        "Draft_Year": 1991,
+        "Draft_Round": 2,
         "Team": "Green Bay Packers"
     },
     {   
@@ -849,8 +849,8 @@ const players = [
         "Active": "OUT",
         "College": "Purdue",
         "Jersey": 9,
-        "Draft Year": 2001,
-        "Draft Round": 2,
+        "Draft_Year": 2001,
+        "Draft_Round": 2,
         "Team": "New Orleans Saints"
     },
     {   
@@ -863,8 +863,8 @@ const players = [
         "Active": "Questionable",
         "College": "Florida State",
         "Jersey": 21,
-        "Draft Year": 1989,
-        "Draft Round": 1,
+        "Draft_Year": 1989,
+        "Draft_Round": 1,
         "Team": "Dallas Cowboys"
     },
     {   
@@ -877,8 +877,8 @@ const players = [
         "Active": "OUT",
         "College": "Mississippi Valley State",
         "Jersey": 80,
-        "Draft Year": 1985,
-        "Draft Round": 1,
+        "Draft_Year": 1985,
+        "Draft_Round": 1,
         "Team": "San Francisco 49ers"
     },
     {   
@@ -891,8 +891,8 @@ const players = [
         "Active": "OUT",
         "College": "Arizona",
         "Jersey": 87,
-        "Draft Year": 2010,
-        "Draft Round": 2,
+        "Draft_Year": 2010,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {   
@@ -905,8 +905,8 @@ const players = [
         "Active": "Active",
         "College": "Cincinnati",
         "Jersey": 87,
-        "Draft Year": 2013,
-        "Draft Round": 3,
+        "Draft_Year": 2013,
+        "Draft_Round": 3,
         "Team": "Kansas CIty Chiefs"
     },
     {   
@@ -919,8 +919,8 @@ const players = [
         "Active": "OUT",
         "College": "LSU",
         "Jersey": 13,
-        "Draft Year": 2014,
-        "Draft Round": 1,
+        "Draft_Year": 2014,
+        "Draft_Round": 1,
         "Team": "New York Giants"
     },
     {   
@@ -933,8 +933,8 @@ const players = [
         "Active": "OUT",
         "College": "Wisconsin",
         "Jersey": 99,
-        "Draft Year": 2011,
-        "Draft Round": 1,
+        "Draft_Year": 2011,
+        "Draft_Round": 1,
         "Team": "Houston Texans"
     },
     {   
@@ -947,8 +947,8 @@ const players = [
         "Active": "Active",
         "College": "\tLouisville",
         "Jersey": 8,
-        "Draft Year": 2018,
-        "Draft Round": 1,
+        "Draft_Year": 2018,
+        "Draft_Round": 1,
         "Team": "Baltimore Ravens"
     },
     {   
@@ -961,8 +961,8 @@ const players = [
         "Active": "Active",
         "College": "Wyoming",
         "Jersey": 17,
-        "Draft Year": 2018,
-        "Draft Round": 1,
+        "Draft_Year": 2018,
+        "Draft_Round": 1,
         "Team": "Buffalo Bills"
     },
     {   
@@ -975,8 +975,8 @@ const players = [
         "Active": "Questionable",
         "College": "West Alabama",
         "Jersey": 10,
-        "Draft Year": 2016,
-        "Draft Round": 5,
+        "Draft_Year": 2016,
+        "Draft_Round": 5,
         "Team": "Miami Dolphins"
     },
     {   
@@ -989,22 +989,22 @@ const players = [
         "Active": "Active",
         "College": "LSU",
         "Jersey": 18,
-        "Draft Year": 2020,
-        "Draft Round": 1,
+        "Draft_Year": 2020,
+        "Draft_Round": 1,
         "Team": "Minnesota Vikings"
     },
     {   
         "id": 104,
         "Name": "Walter Payton",
         "Position": "RB",
-        "Age": -1,
+        "Age": "deceased",
         "Height": "5'10\"",
         "Weight": "200 lbs",
         "Active": "OUT",
         "College": "Jackson State",
         "Jersey": 34,
-        "Draft Year": 1975,
-        "Draft Round": 1,
+        "Draft_Year": 1975,
+        "Draft_Round": 1,
         "Team": "Chicago Bears"
     },
     {   
@@ -1017,8 +1017,8 @@ const players = [
         "Active": "OUT",
         "College": "Oklahoma State",
         "Jersey": 20,
-        "Draft Year": 1989,
-        "Draft Round": 1,
+        "Draft_Year": 1989,
+        "Draft_Round": 1,
         "Team": "Detroit Lions"
     },
     {   
@@ -1031,8 +1031,8 @@ const players = [
         "Active": "OUT",
         "College": "Miami",
         "Jersey": 52,
-        "Draft Year": 1996,
-        "Draft Round": 1,
+        "Draft_Year": 1996,
+        "Draft_Round": 1,
         "Team": "Baltimore Ravens"
     },
     {   
@@ -1045,8 +1045,8 @@ const players = [
         "Active": "OUT",
         "College": "Kent State",
         "Jersey": 11,
-        "Draft Year": 2009,
-        "Draft Round": 7,
+        "Draft_Year": 2009,
+        "Draft_Round": 7,
         "Team": "New England Patriots"
     },
     {   
@@ -1058,9 +1058,9 @@ const players = [
         "Weight": "215 lbs",
         "Active": "Questionable",
         "College": "Wesleyan University",
-        "Jersey": -1,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Jersey": "-",
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "North Carolina"
     },
     {   
@@ -1073,8 +1073,8 @@ const players = [
         "Active": "OUT",
         "College": "Marshall",
         "Jersey": 81,
-        "Draft Year": 1998,
-        "Draft Round": 1,
+        "Draft_Year": 1998,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1087,8 +1087,8 @@ const players = [
         "Active": "Active",
         "College": "Alabama",
         "Jersey": 10,
-        "Draft Year": 2021,
-        "Draft Round": 1,
+        "Draft_Year": 2021,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1101,8 +1101,8 @@ const players = [
         "Active": "Questionable",
         "College": "Texas Tech",
         "Jersey": 83,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {   
@@ -1115,8 +1115,8 @@ const players = [
         "Active": "OUT",
         "College": "Miami",
         "Jersey": 75,
-        "Draft Year": 2004,
-        "Draft Round": 1,
+        "Draft_Year": 2004,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1129,8 +1129,8 @@ const players = [
         "Active": "OUT",
         "College": "Michigan",
         "Jersey": 24,
-        "Draft Year": 1995,
-        "Draft Round": 1,
+        "Draft_Year": 1995,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1143,22 +1143,22 @@ const players = [
         "Active": "OUT",
         "College": "\tSouth Carolina",
         "Jersey": 27,
-        "Draft Year": 2012,
-        "Draft Round": 1,
+        "Draft_Year": 2012,
+        "Draft_Round": 1,
         "Team": "Buffalo Bills"
     },
     {   
         "id": 108,
         "Name": "Jim Brown",
         "Position": "FB",
-        "Age": -1,
+        "Age":"deceased",
         "Height": "6' 2\"",
         "Weight": "232 lbs",
         "Active": "OUT",
         "College": "Syracuse",
         "Jersey": 32,
-        "Draft Year": 1957,
-        "Draft Round": 1,
+        "Draft_Year": 1957,
+        "Draft_Round": 1,
         "Team": "Cleveland Browns"
     },
     {   
@@ -1171,8 +1171,8 @@ const players = [
         "Active": "OUT",
         "College": "North Carolina",
         "Jersey": 56,
-        "Draft Year": 1981,
-        "Draft Round": 1,
+        "Draft_Year": 1981,
+        "Draft_Round": 1,
         "Team": "New York Giants"
     },
     {   
@@ -1185,8 +1185,8 @@ const players = [
         "Active": "Questionable",
         "College": "Central Michigan",
         "Jersey": 84,
-        "Draft Year": 2010,
-        "Draft Round": 6,
+        "Draft_Year": 2010,
+        "Draft_Round": 6,
         "Team": "Pittsburgh Steelers"
     },
     {   
@@ -1199,8 +1199,8 @@ const players = [
         "Active": "OUT",
         "College": "USC",
         "Jersey": 43,
-        "Draft Year": 2003,
-        "Draft Round": 1,
+        "Draft_Year": 2003,
+        "Draft_Round": 1,
         "Team": "Pittsburgh Steelers"
     },
     {   
@@ -1213,8 +1213,8 @@ const players = [
         "Active": "OUT",
         "College": "Georgia Tech",
         "Jersey": 81,
-        "Draft Year": 2007,
-        "Draft Round": 1,
+        "Draft_Year": 2007,
+        "Draft_Round": 1,
         "Team": "Detroit Lions"
     },
     {   
@@ -1227,8 +1227,8 @@ const players = [
         "Active": "OUT",
         "College": "New Mexico",
         "Jersey": 54,
-        "Draft Year": 2000,
-        "Draft Round": 1,
+        "Draft_Year": 2000,
+        "Draft_Round": 1,
         "Team": "Chicago Bears"
     },
     {   
@@ -1241,8 +1241,8 @@ const players = [
         "Active": "OUT",
         "College": "Cincinnati",
         "Jersey": 62,
-        "Draft Year": 2011,
-        "Draft Round": 6,
+        "Draft_Year": 2011,
+        "Draft_Round": 6,
         "Team": "Philadelphia Eagles"
     },
     {   
@@ -1255,8 +1255,8 @@ const players = [
         "Active": "Questionable",
         "College": "Virginia Tech",
         "Jersey": 29,
-        "Draft Year": 2016,
-        "Draft Round": 3,
+        "Draft_Year": 2016,
+        "Draft_Round": 3,
         "Team": "Washington Commanders"
     },
     {   
@@ -1269,8 +1269,8 @@ const players = [
         "Active": "OUT",
         "College": "Kent State",
         "Jersey": 92,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "Pittsburgh Steelers"
     },
     {   
@@ -1283,8 +1283,8 @@ const players = [
         "Active": "OUT",
         "College": "Miami",
         "Jersey": 7,
-        "Draft Year": 2004,
-        "Draft Round": 1,
+        "Draft_Year": 2004,
+        "Draft_Round": 1,
         "Team": "Pittsburgh Steelers"
     },
     {   
@@ -1297,8 +1297,8 @@ const players = [
         "Active": "OUT",
         "College": "Alabama",
         "Jersey": 11,
-        "Draft Year": 2011,
-        "Draft Round": 1,
+        "Draft_Year": 2011,
+        "Draft_Round": 1,
         "Team": "Atlanta Falcons"
     },
     {   
@@ -1311,8 +1311,8 @@ const players = [
         "Active": "OUT",
         "College": "Oklahoma",
         "Jersey": 28,
-        "Draft Year": 2007,
-        "Draft Round": 1,
+        "Draft_Year": 2007,
+        "Draft_Round": 1,
         "Team": "Minnesota Vikings"
     },
     {   
@@ -1325,8 +1325,8 @@ const players = [
         "Active": "OUT",
         "College": "Georgia",
         "Jersey": 18,
-        "Draft Year": 2011,
-        "Draft Round": 1,
+        "Draft_Year": 2011,
+        "Draft_Round": 1,
         "Team": "Cincinnati Bengals"
     },
     {   
@@ -1339,8 +1339,8 @@ const players = [
         "Active": "OUT",
         "College": "Miami (FL)",
         "Jersey": 80,
-        "Draft Year": 2010,
-        "Draft Round": 3,
+        "Draft_Year": 2010,
+        "Draft_Round": 3,
         "Team": "New Orleans Saints"
     },
     {   
@@ -1353,8 +1353,8 @@ const players = [
         "Active": "Active",
         "College": "Texas A&M",
         "Jersey": 95,
-        "Draft Year": 2017,
-        "Draft Round": 1,
+        "Draft_Year": 2017,
+        "Draft_Round": 1,
         "Team": "Cleveland Browns"
     },
     {   
@@ -1367,8 +1367,8 @@ const players = [
         "Active": "Active",
         "College": "LSU",
         "Jersey": 1,
-        "Draft Year": 2024,
-        "Draft Round": 1,
+        "Draft_Year": 2024,
+        "Draft_Round": 1,
         "Team": "New York Giants"
     },
     {   
@@ -1381,8 +1381,8 @@ const players = [
         "Active": "Active",
         "College": "LSU",
         "Jersey": 5,
-        "Draft Year": 2024,
-        "Draft Round": 1,
+        "Draft_Year": 2024,
+        "Draft_Round": 1,
         "Team": "Washington Commanders"
     },
     {   
@@ -1395,22 +1395,22 @@ const players = [
         "Active": "OUT",
         "College": "Arizona",
         "Jersey": 54,
-        "Draft Year": 1996,
-        "Draft Round": 3,
+        "Draft_Year": 1996,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {   
         "id": 22,
         "Name": "Adam Vinatieri",
-        "Position": "PK",
+        "Position": "K",
         "Age": 52,
         "Height": "6'",
         "Weight": "212 lbs",
         "Active": "OUT",
         "College": "South Dakota State",
         "Jersey": 4,
-        "Draft Year": -1,
-        "Draft Round": -1,
+        "Draft_Year": "-",
+        "Draft_Round": "-",
         "Team": "New England Patriots"
     },
     {   
@@ -1423,8 +1423,8 @@ const players = [
         "Active": "OUT",
         "College": "USC",
         "Jersey": 55,
-        "Draft Year": 1994,
-        "Draft Round": 1,
+        "Draft_Year": 1994,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1437,8 +1437,8 @@ const players = [
         "Active": "Questionable",
         "College": "Ohio State",
         "Jersey": 50,
-        "Draft Year": 1997,
-        "Draft Round": 3,
+        "Draft_Year": 1997,
+        "Draft_Round": 3,
         "Team": "New England Patriots"
     },
     {   
@@ -1451,8 +1451,8 @@ const players = [
         "Active": "OUT",
         "College": "Georgia",
         "Jersey": 93,
-        "Draft Year": 2001,
-        "Draft Round": 1,
+        "Draft_Year": 2001,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1465,8 +1465,8 @@ const players = [
         "Active": "OUT",
         "College": "Washington State",
         "Jersey": 11,
-        "Draft Year": 1993,
-        "Draft Round": 1,
+        "Draft_Year": 1993,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1479,8 +1479,8 @@ const players = [
         "Active": "Questionable",
         "College": "LSU",
         "Jersey": 33,
-        "Draft Year": 1999,
-        "Draft Round": 2,
+        "Draft_Year": 1999,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {   
@@ -1493,8 +1493,8 @@ const players = [
         "Active": "OUT",
         "College": "Alabama",
         "Jersey": 73,
-        "Draft Year": 1973,
-        "Draft Round": 1,
+        "Draft_Year": 1973,
+        "Draft_Round": 1,
         "Team": "New England Patriots"
     },
     {   
@@ -1507,8 +1507,8 @@ const players = [
         "Active": "OUT",
         "College": "Iowa",
         "Jersey": 56,
-        "Draft Year": 1982,
-        "Draft Round": 2,
+        "Draft_Year": 1982,
+        "Draft_Round": 2,
         "Team": "New England Patriots"
     },
     {   
@@ -1521,8 +1521,8 @@ const players = [
         "Active": "OUT",
         "College": "Western Illinois",
         "Jersey": 37,
-        "Draft Year": 1994,
-        "Draft Round": 5,
+        "Draft_Year": 1994,
+        "Draft_Round": 5,
         "Team": "New England Patriots"
     },
     {   
@@ -1535,8 +1535,8 @@ const players = [
         "Active": "Active",
         "College": "Wisconsin",
         "Jersey": 90,
-        "Draft Year": 2017,
-        "Draft Round": 1,
+        "Draft_Year": 2017,
+        "Draft_Round": 1,
         "Team": "Pittsburgh Steelers"
     },
     {
@@ -1547,8 +1547,8 @@ const players = [
         "Active": "Until Today",
         "College": "Basmach",
         "Jersey": 100,
-        "Draft Year": 2022,
-        "Draft Round": 1,
+        "Draft_Year": 2022,
+        "Draft_Round": 1,
         "Team": "SPIDER"
     },
 ]
