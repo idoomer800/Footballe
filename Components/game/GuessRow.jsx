@@ -172,8 +172,8 @@ const imageSource = (name) => {
     { label: 'Active', value: guess.Active, correct: correctPlayer.Active, type: 'Active' },
     { label: 'College', value: guess.College, correct: correctPlayer.College, type: 'College' },
     { label: 'Jersey #', value: parseNumber(guess.Jersey), correct: correctPlayer.Jersey, type: 'jersey' },
-    { label: 'Draft_Year', value: parseNumber(guess["Draft_Year"]), correct: correctPlayer["Draft_Year"], type: 'Draft_Year' },
-    { label: 'Draft_Round', value: parseNumber(guess["Draft_Round"]), correct: correctPlayer["Draft_Round"], type: 'Draft_Round' },
+    { label: 'Draft Year', value: parseNumber(guess["Draft_Year"]), correct: correctPlayer["Draft_Year"], type: 'Draft_Year' },
+    { label: 'Draft Round', value: parseNumber(guess["Draft_Round"]), correct: correctPlayer["Draft_Round"], type: 'Draft_Round' },
     { label: 'Team', value: guess.Team, correct: correctPlayer.Team, type: 'Team' },
   ];
 
@@ -202,7 +202,7 @@ const imageSource = (name) => {
             const status = getMatchStatus(attr.value, attr.correct, attr.type);
             // Determine if this attribute is numeric and should show an arrow
             const isNumeric = [
-              'Age', 'jersey', 'Draft_Year', 'Draft_Round', 'Height', 'Weight'
+              'Age', 'jersey', 'Draft Year', 'Draft Round', 'Height', 'Weight'
             ].includes(attr.type);
             // Extract numeric value for comparison
             let guessNum = attr.value;
