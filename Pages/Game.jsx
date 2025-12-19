@@ -95,6 +95,8 @@ export default function Game() {
 
   if (dailyPlayerIndex == 100) {
     availablePlayers = availablePlayers.map(p => correctPlayer)
+  } else {
+    availablePlayers = availablePlayers.filter((value) => value.id !== 100)
   }
 
   const daysUntilTouchdown = isTouchdown ? 0 : Math.max(LAST_DAY - (diffDays) - 1, 0);

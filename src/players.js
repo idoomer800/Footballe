@@ -1542,16 +1542,14 @@ const players = [
     {
         "id": 100,
         "Name": "Jordan Shonlie Lublin",
-        "Position": "LB",
-        "Age": 31,
-        "Height": "6' 4\"",
-        "Weight": "252 lbs",
-        "Active": "Active",
-        "College": "Wisconsin",
-        "Jersey": 90,
-        "Draft Year": 2017,
+        "Position": "DevOps",
+        "Age": 22,
+        "Active": "Until Today",
+        "College": "Basmach",
+        "Jersey": 100,
+        "Draft Year": 2022,
         "Draft Round": 1,
-        "Team": "Pittsburgh Steelers"
+        "Team": "SPIDER"
     },
 ]
 
