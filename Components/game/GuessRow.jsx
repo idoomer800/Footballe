@@ -172,8 +172,8 @@ const imageSource = (name) => {
     { label: 'Active', value: guess.Active, correct: correctPlayer.Active, type: 'Active' },
     { label: 'College', value: guess.College, correct: correctPlayer.College, type: 'College' },
     { label: 'Jersey #', value: parseNumber(guess.Jersey), correct: correctPlayer.Jersey, type: 'jersey' },
-    { label: 'Draft Year', value: parseNumber(guess["Draft_Year"]), correct: correctPlayer["Draft_Year"], type: 'Draft_Year' },
-    { label: 'Draft Round', value: parseNumber(guess["Draft_Round"]), correct: correctPlayer["Draft_Round"], type: 'Draft_Round' },
+    { label: 'Draft Year', value: parseNumber(guess["Draft_Year"]), correct: correctPlayer["Draft_Year"], type: 'Draft Year' },
+    { label: 'Draft Round', value: parseNumber(guess["Draft_Round"]), correct: correctPlayer["Draft_Round"], type: 'Draft Round' },
     { label: 'Team', value: guess.Team, correct: correctPlayer.Team, type: 'Team' },
   ];
 
