@@ -171,7 +171,7 @@ const imageSource = (name) => {
     { label: 'Weight', value: guess.Weight, correct: correctPlayer.Weight, type: 'Weight' },
     { label: 'Active', value: guess.Active, correct: correctPlayer.Active, type: 'Active' },
     { label: 'College', value: guess.College, correct: correctPlayer.College, type: 'College' },
-    { label: 'Jersey #', value: parseNumber(guess.Jersey), correct: correctPlayer.Jersey, type: 'jersey' },
+    { label: 'Jersey #', value: parseNumber(guess.Jersey), correct: correctPlayer.Jersey, type: 'Jersey' },
     { label: 'Draft Year', value: parseNumber(guess["Draft_Year"]), correct: correctPlayer["Draft_Year"], type: 'Draft Year' },
     { label: 'Draft Round', value: parseNumber(guess["Draft_Round"]), correct: correctPlayer["Draft_Round"], type: 'Draft Round' },
     { label: 'Team', value: guess.Team, correct: correctPlayer.Team, type: 'Team' },
@@ -202,7 +202,7 @@ const imageSource = (name) => {
             const status = getMatchStatus(attr.value, attr.correct, attr.type);
             // Determine if this attribute is numeric and should show an arrow
             const isNumeric = [
-              'Age', 'jersey', 'Draft Year', 'Draft Round', 'Height', 'Weight'
+              'Age', 'Jersey', 'Draft Year', 'Draft Round', 'Height', 'Weight'
             ].includes(attr.type);
             // Extract numeric value for comparison
             let guessNum = attr.value;

@@ -115,7 +115,7 @@ export default function Game() {
             Footbal<span className="text-blue-500">le</span>
           </h1>
           <p className="text-gray-400 text-lg">
-            Guess today's mystery Florida football star
+            Guess today's mystery football star
           </p>
           
           <div className="flex justify-center gap-6 mt-4">
