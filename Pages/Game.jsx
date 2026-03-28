@@ -10,7 +10,7 @@ import ConfettiEffect from '../Components/game/ConfettiEffect.jsx';
 import Touchdown from '../Components/game/Touchdown.jsx';
 
 // The first day the app is active (set to 2025-07-01, more than 100 days before 2025-10-27)
-const APP_START_DATE = new Date('2025-12-19');
+const APP_START_DATE = new Date('2025-12-21');
 const MAX_GUESSES = 10;
 const LAST_DAY = 100;
 
